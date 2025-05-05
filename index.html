@@ -1,32 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Chepchieng interactive page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-    <div class="img">
-        <img src="signin.jpg" alt="sign in image" id="img">
-    </div>
-    <div class="sign-in">
-    <form action="" method="post" id="form">
-        <h1>Sign In Page</h1>
-        <label for="name">First Name:</label>
-        <input type="text" id="key" name="name" placeholder="Enter your name" required>
-        <label for="surname">Last Name:</label>
-        <input type="text" id="key" name="surname" placeholder="Enter your surname" required>
-        <label for="password">Password:</label>
-        <input type="password" id="key" name="password" placeholder="Enter your password" minlength="8" required>
-        <label for="email">Email:</label>
-        <input type="email" id="key" name="email" placeholder="Enter your email" required>
-        <input type="submit" value="Submit" id="submit">
-    </form>
-</div>
-</div>
-<script src="script.js"></script>
+
+  <form id="contactForm">
+    <h2>Contact Us</h2>
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" required>
+    <div class="error" id="nameError"></div>
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required>
+    <div class="error" id="emailError"></div>
+
+    <label for="message">Message *</label>
+    <textarea id="message" name="message" rows="4" maxlength="200"></textarea>
+    <div id="charCount">200 characters remaining</div>
+    <div class="error" id="messageError"></div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="themeToggle">Toggle Dark Mode</div>
+
+  <script src="script.js"></script>
 </body>
 </html>
